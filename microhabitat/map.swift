@@ -11,12 +11,17 @@ import MapKit
 
 struct MapView: View {
 
+  let distance: Int
+
   var body: some View {
     NavigationView {
       Map() {
 
       }
       .navigationTitle("microhabitat")
+      .onAppear {
+        print("distance: \(distance)")
+      }
       .mapControls {
         MapCompass()
           .mapControlVisibility(.visible)
@@ -33,7 +38,6 @@ struct MapView: View {
 }
 
 #Preview {
-  MapView()
-
+  MapView(distance: 20)
 }
 
