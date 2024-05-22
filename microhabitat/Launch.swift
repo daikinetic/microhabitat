@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Launch: View {
   var body: some View {
-    NavigationView {
+    NavigationStack {
       ZStack(alignment: .bottom) {
         Image(uiImage: UIImage(imageLiteralResourceName: "microhabitat"))
           .resizable()
@@ -21,22 +21,26 @@ struct Launch: View {
               .ignoresSafeArea()
           }
 
+
+
         RoundedRectangle(cornerRadius: 16)
           .frame(width: 240, height: 56)
           .foregroundColor(.white)
           .opacity(0.45)
           .overlay(alignment: .center) {
-            Text("microhabitat")
+            NavigationLink("microhabitat", value: 1)
+              .foregroundColor(.black)
               .font(.title2)
               .fontDesign(.monospaced)
               .italic()
           }
           .padding(.bottom, 40)
-          .onTapGesture {
-            //
-          }
 
       }
+      .navigationDestination(for: Int.self) { _ in
+        MapView()
+      }
+
     }
 
   }
