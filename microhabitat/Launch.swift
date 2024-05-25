@@ -33,15 +33,16 @@ struct Launch: View {
           .padding(.bottom, 200)
 
         RoundedRectangle(cornerRadius: 16)
-          .frame(width: 240, height: 56)
+          .frame(maxWidth: 340, maxHeight: 56)
           .foregroundColor(.white)
-          .opacity(0.45)
           .overlay(alignment: .center) {
-            NavigationLink("microhabitat", value: Int(kirometer))
+            NavigationLink("サイクリングコースを提案する!", value: Int(kirometer))
               .foregroundColor(.black)
               .font(.title2)
               .fontDesign(.monospaced)
               .italic()
+              .lineLimit(1)
+              .padding(.horizontal, 12)
           }
           .padding(.bottom, 40)
 
