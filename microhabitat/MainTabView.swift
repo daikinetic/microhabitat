@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainTabView: View {
 
-  @State var selectedTab = 0
+  @State var selectedTab: Int
 
   var body: some View {
     ZStack(alignment: .bottom) {
@@ -37,9 +37,10 @@ struct MainTabView: View {
       }
       .frame(height: 72)
       .background(Color(red: 14/255, green: 26/255, blue: 51/255).opacity(0.2))
-      .cornerRadius(36)
-      .padding(.horizontal, 24)
+      .cornerRadius(16)
+      .padding(.horizontal, 16)
     }
+    .padding(.top, 56)
   }
 }
 
@@ -61,9 +62,9 @@ extension MainTabView {
       }
       Spacer()
     }
-    .frame(width: isActive ? .infinity : 64, height: 64)
+    .frame(width: isActive ? .infinity : 64, height: 62)
     .background(isActive ? Color(red: 14/255, green: 26/255, blue: 51/255).opacity(0.3) : .clear)
-    .cornerRadius(32)
+    .cornerRadius(12)
   }
 }
 
@@ -96,5 +97,5 @@ enum TabItems: Int, CaseIterable {
 }
 
 #Preview {
-  MainTabView()
+  MainTabView(selectedTab: 0)
 }

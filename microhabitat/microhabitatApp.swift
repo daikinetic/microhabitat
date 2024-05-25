@@ -13,7 +13,7 @@ struct microhabitatApp: App {
 
   var body: some Scene {
     WindowGroup {
-      MainTabView()
+      MainTabView(selectedTab: 0)
         .environment(\.managedObjectContext, persistenceController.container.viewContext)
     }
   }

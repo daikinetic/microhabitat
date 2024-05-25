@@ -18,7 +18,6 @@ struct MapView: View {
       Map() {
 
       }
-      .navigationTitle("microhabitat")
       .onAppear {
         print("distance: \(distance)")
       }
@@ -32,12 +31,12 @@ struct MapView: View {
         MapUserLocationButton()
           .mapControlVisibility(.visible)
       }
-      
+
     }
   }
 }
 
 #Preview {
-  MapView(distance: 20)
+  MainTabView(selectedTab: 1)
 }
 

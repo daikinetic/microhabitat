@@ -56,5 +56,5 @@ struct Launch: View {
 }
 
 #Preview {
-  MainTabView()
+  MainTabView(selectedTab: 0)
 }
