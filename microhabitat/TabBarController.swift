@@ -21,6 +21,7 @@ struct MainTabView: View {
         Launch()
           .tag(2)
       }
+      .padding(.bottom, 32)
 
       ZStack {
         HStack {
@@ -35,7 +36,7 @@ struct MainTabView: View {
         .padding(6)
       }
       .frame(height: 72)
-      .background(.purple.opacity(0.2))
+      .background(Color(red: 14/255, green: 26/255, blue: 51/255).opacity(0.2))
       .cornerRadius(36)
       .padding(.horizontal, 24)
     }
@@ -50,18 +51,18 @@ extension MainTabView {
         .resizable()
         .renderingMode(.template)
         .foregroundColor(.black)
-        .frame(width: 32, height: 32)
+        .frame(width: 28, height: 28)
       if isActive {
 
         Text(title)
-          .font(.system(size: 24))
+          .font(.system(size: 20))
           .foregroundColor(.black)
           .padding(.leading, 4)
       }
       Spacer()
     }
     .frame(width: isActive ? .infinity : 64, height: 64)
-    .background(.purple.opacity(0.4))
+    .background(isActive ? Color(red: 14/255, green: 26/255, blue: 51/255).opacity(0.3) : .clear)
     .cornerRadius(32)
   }
 }

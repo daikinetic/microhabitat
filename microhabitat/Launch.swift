@@ -17,11 +17,9 @@ struct Launch: View {
         Image(uiImage: UIImage(imageLiteralResourceName: "microhabitat_forest"))
           .resizable()
           .aspectRatio(contentMode: .fill)
-          .ignoresSafeArea()
           .overlay {
             Rectangle()
               .opacity(0.5)
-              .ignoresSafeArea()
           }
 
         TextField("distance / km", text: $kirometer)
@@ -58,5 +56,5 @@ struct Launch: View {
 }
 
 #Preview {
-  Launch()
+  MainTabView()
 }
