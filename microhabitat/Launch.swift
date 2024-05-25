@@ -14,7 +14,7 @@ struct Launch: View {
   var body: some View {
     NavigationStack {
       ZStack(alignment: .bottom) {
-        Image(uiImage: UIImage(imageLiteralResourceName: "microhabitat"))
+        Image(uiImage: UIImage(imageLiteralResourceName: "microhabitat_forest"))
           .resizable()
           .aspectRatio(contentMode: .fill)
           .ignoresSafeArea()
