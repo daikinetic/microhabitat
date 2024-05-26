@@ -1,13 +1,7 @@
-//
-//  Launch.swift
-//  microhabitat
-//
-//  Created by Daiki Takano on 2024/05/22.
-//
 
 import SwiftUI
 
-struct Launch: View {
+struct CycleInputViewController: View {
 
   @State private var kirometer: String = ""
   @FocusState var focus: Bool

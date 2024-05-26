@@ -14,11 +14,11 @@ struct MainTabView: View {
   var body: some View {
     ZStack(alignment: .bottom) {
       TabView(selection: $selectedTab) {
-        Launch()
+        CycleInputViewController()
           .tag(0)
         MapView(distance: 20)
           .tag(1)
-        Launch()
+        CycleInputViewController()
           .tag(2)
       }
       .padding(.bottom, 32)
