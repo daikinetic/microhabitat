@@ -1,9 +1,3 @@
-//
-//  ContentView.swift
-//  microhabitat
-//
-//  Created by Daiki Takano on 2024/05/06.
-//
 
 import SwiftUI
 import CoreData

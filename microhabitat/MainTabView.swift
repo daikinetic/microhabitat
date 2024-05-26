@@ -1,9 +1,3 @@
-//
-//  TabBarController.swift
-//  microhabitat
-//
-//  Created by Daiki Takano on 2024/05/25.
-//
 
 import SwiftUI
 
