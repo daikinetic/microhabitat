@@ -10,6 +10,7 @@ import SwiftUI
 struct Launch: View {
 
   @State private var kirometer: String = ""
+  @FocusState var focus: Bool
 
   var body: some View {
     NavigationStack {
@@ -22,21 +23,33 @@ struct Launch: View {
               .opacity(0.5)
           }
 
-        TextField("distance / km", text: $kirometer)
-          .frame(width: 200, height: 50)
-          .font(.title2)
-          .background {
-            RoundedRectangle(cornerRadius: 16)
-              .frame(width: 240, height: 56)
-              .foregroundColor(.white)
-          }
-          .padding(.bottom, 200)
+        HStack(spacing: 12) {
+          TextField("距離", text: $kirometer)
+            .frame(width: 100, height: 56)
+            .font(.title2)
+            .background {
+              RoundedRectangle(cornerRadius: 16)
+                .frame(width: 100, height: 56)
+                .foregroundColor(.white)
+            }
+            .multilineTextAlignment(.center)
+            .keyboardType(.numberPad)
+            .focused($focus)
+
+          Text("km")
+            .frame(width: 40, height: 40)
+            .font(.title)
+            .fontWeight(.bold)
+            .foregroundColor(.white)
+        }
+        .padding(.bottom, 200)
+
 
         RoundedRectangle(cornerRadius: 16)
           .frame(maxWidth: 340, maxHeight: 56)
           .foregroundColor(.white)
           .overlay(alignment: .center) {
-            NavigationLink("サイクリングコースを提案する!", value: Int(kirometer))
+            NavigationLink("コースを提案する", value: Int(kirometer))
               .foregroundColor(.black)
               .font(.title2)
               .fontDesign(.monospaced)
@@ -52,6 +65,12 @@ struct Launch: View {
       }
 
     }
+    .gesture(
+      TapGesture()
+        .onEnded { _ in
+          focus = false
+        }
+    )
 
   }
 }
