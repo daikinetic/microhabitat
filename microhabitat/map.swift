@@ -1,4 +1,6 @@
 
+// ref: https://zenn.dev/oka_yuuji/articles/38afe965565002
+
 import SwiftUI
 import CoreData
 import MapKit
