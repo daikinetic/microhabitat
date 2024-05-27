@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct CycleInputViewController: View {
+struct CycleInputView: View {
 
   @State private var kirometer: String = ""
   @FocusState var focus: Bool
@@ -21,6 +21,7 @@ struct CycleInputViewController: View {
           TextField("距離", text: $kirometer)
             .frame(width: 100, height: 56)
             .font(.title2)
+            .foregroundColor(.black)
             .background {
               RoundedRectangle(cornerRadius: 16)
                 .frame(width: 100, height: 56)
@@ -45,7 +46,7 @@ struct CycleInputViewController: View {
           .overlay(alignment: .center) {
             NavigationLink("コースを提案する", value: Int(kirometer))
               .foregroundColor(.black)
-              .font(.title2)
+              .font(.system(size: 18))
               .fontDesign(.monospaced)
               .italic()
               .lineLimit(1)

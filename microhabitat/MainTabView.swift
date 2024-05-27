@@ -8,16 +8,16 @@ struct MainTabView: View {
   var body: some View {
     ZStack(alignment: .bottom) {
       TabView(selection: $selectedTab) {
-        CycleInputViewController()
+        NoteWebView()
           .tag(0)
         MapView(distance: 20)
           .tag(1)
-        CycleInputViewController()
+        CycleInputView()
           .tag(2)
       }
-      .padding(.bottom, 32)
+      .padding(.bottom, 26)
 
-      ZStack {
+      ZStack(alignment: .bottom) {
         HStack {
           ForEach((TabItems.allCases), id: \.self) { item in
             Button {
@@ -29,8 +29,7 @@ struct MainTabView: View {
         }
         .padding(6)
       }
-      .frame(height: 72)
-      .background(Color(red: 14/255, green: 26/255, blue: 51/255).opacity(0.2))
+      .background(.white)
       .cornerRadius(16)
       .padding(.horizontal, 16)
     }
@@ -46,11 +45,11 @@ extension MainTabView {
         .resizable()
         .renderingMode(.template)
         .foregroundColor(.black)
-        .frame(width: 28, height: 28)
+        .frame(width: 24, height: 24)
       if isActive {
 
         Text(title)
-          .font(.system(size: 20))
+          .font(.system(size: 15))
           .foregroundColor(.black)
           .padding(.leading, 4)
       }

@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		6552A6DD2C0201180064E4CE /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6552A6DC2C0201180064E4CE /* MainTabView.swift */; };
-		658E95E82BF0A2880073EFCA /* map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E95E72BF0A2880073EFCA /* map.swift */; };
-		659042362BFCFB0400CFB693 /* CycleInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659042352BFCFB0400CFB693 /* CycleInputViewController.swift */; };
+		658E95E82BF0A2880073EFCA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E95E72BF0A2880073EFCA /* MapView.swift */; };
+		659042362BFCFB0400CFB693 /* CycleInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659042352BFCFB0400CFB693 /* CycleInputView.swift */; };
 		659513632BE88AC80052E23B /* microhabitatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659513622BE88AC80052E23B /* microhabitatApp.swift */; };
 		659513652BE88AC80052E23B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659513642BE88AC80052E23B /* ContentView.swift */; };
 		659513672BE88AC90052E23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659513662BE88AC90052E23B /* Assets.xcassets */; };
 		6595136A2BE88AC90052E23B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659513692BE88AC90052E23B /* Preview Assets.xcassets */; };
 		6595136C2BE88AC90052E23B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6595136B2BE88AC90052E23B /* Persistence.swift */; };
 		6595136F2BE88AC90052E23B /* microhabitat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6595136D2BE88AC90052E23B /* microhabitat.xcdatamodeld */; };
+		65E17A302C04D8C200357E2D /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E17A2F2C04D8C200357E2D /* WebView.swift */; };
+		65E17A322C04DCF600357E2D /* NoteWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E17A312C04DCF600357E2D /* NoteWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6552A6DC2C0201180064E4CE /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		658E95E72BF0A2880073EFCA /* map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = map.swift; sourceTree = "<group>"; };
-		659042352BFCFB0400CFB693 /* CycleInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleInputViewController.swift; sourceTree = "<group>"; };
+		658E95E72BF0A2880073EFCA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		659042352BFCFB0400CFB693 /* CycleInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleInputView.swift; sourceTree = "<group>"; };
 		6595135F2BE88AC80052E23B /* microhabitat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = microhabitat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		659513622BE88AC80052E23B /* microhabitatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = microhabitatApp.swift; sourceTree = "<group>"; };
 		659513642BE88AC80052E23B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		659513692BE88AC90052E23B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6595136B2BE88AC90052E23B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		6595136E2BE88AC90052E23B /* microhabitat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = microhabitat.xcdatamodel; sourceTree = "<group>"; };
+		65E17A2F2C04D8C200357E2D /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		65E17A312C04DCF600357E2D /* NoteWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +67,10 @@
 			children = (
 				659513622BE88AC80052E23B /* microhabitatApp.swift */,
 				659513642BE88AC80052E23B /* ContentView.swift */,
-				658E95E72BF0A2880073EFCA /* map.swift */,
-				659042352BFCFB0400CFB693 /* CycleInputViewController.swift */,
+				658E95E72BF0A2880073EFCA /* MapView.swift */,
+				65E17A2F2C04D8C200357E2D /* WebView.swift */,
+				65E17A312C04DCF600357E2D /* NoteWebView.swift */,
+				659042352BFCFB0400CFB693 /* CycleInputView.swift */,
 				6552A6DC2C0201180064E4CE /* MainTabView.swift */,
 				659513662BE88AC90052E23B /* Assets.xcassets */,
 				6595136B2BE88AC90052E23B /* Persistence.swift */,
@@ -153,12 +159,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6595136F2BE88AC90052E23B /* microhabitat.xcdatamodeld in Sources */,
+				65E17A322C04DCF600357E2D /* NoteWebView.swift in Sources */,
 				6595136C2BE88AC90052E23B /* Persistence.swift in Sources */,
 				659513652BE88AC80052E23B /* ContentView.swift in Sources */,
-				658E95E82BF0A2880073EFCA /* map.swift in Sources */,
+				658E95E82BF0A2880073EFCA /* MapView.swift in Sources */,
 				6552A6DD2C0201180064E4CE /* MainTabView.swift in Sources */,
-				659042362BFCFB0400CFB693 /* CycleInputViewController.swift in Sources */,
+				659042362BFCFB0400CFB693 /* CycleInputView.swift in Sources */,
 				659513632BE88AC80052E23B /* microhabitatApp.swift in Sources */,
+				65E17A302C04D8C200357E2D /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +300,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"microhabitat/Preview Content\"";
-				DEVELOPMENT_TEAM = CHBJ9RX7DB;
+				DEVELOPMENT_TEAM = XSW5VPM32V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -321,7 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"microhabitat/Preview Content\"";
-				DEVELOPMENT_TEAM = CHBJ9RX7DB;
+				DEVELOPMENT_TEAM = XSW5VPM32V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
