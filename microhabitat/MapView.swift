@@ -9,13 +9,23 @@ struct MapView: View {
 
   @State private var cameraPosition: MapCameraPosition = .region(.myRegion)
 
-
   let distance: Int
 
   var body: some View {
     NavigationView {
       Map(position: $cameraPosition) {
-
+        Annotation(coordinate: .myLocation) {
+          Image("microhabitat_leaf")
+            .resizable()
+            .frame(width: 24, height: 24)
+            .padding(8)
+            .background(
+              RoundedRectangle(cornerRadius: 8)
+                .fill(.white)
+            )
+        } label: {
+          Text("拠点")
+        }
       }
       .onAppear {
         print("distance: \(distance)")
