@@ -7,11 +7,14 @@ import MapKit
 
 struct MapView: View {
 
+  @State private var cameraPosition: MapCameraPosition = .region(.myRegion)
+
+
   let distance: Int
 
   var body: some View {
     NavigationView {
-      Map() {
+      Map(position: $cameraPosition) {
 
       }
       .onAppear {
@@ -29,6 +32,18 @@ struct MapView: View {
       }
 
     }
+  }
+}
+
+extension CLLocationCoordinate2D {
+  static var myLocation: CLLocationCoordinate2D {
+    .init(latitude: 35.6620, longitude: 139.4452)
+  }
+}
+
+extension MKCoordinateRegion {
+  static var myRegion: MKCoordinateRegion {
+    .init(center: .myLocation, latitudinalMeters: 400, longitudinalMeters: 400)
   }
 }
 
